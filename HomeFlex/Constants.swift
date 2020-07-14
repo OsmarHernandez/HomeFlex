@@ -9,6 +9,5 @@
 import Foundation
 
 struct Constants {
-    static let defaultCollectionViewCell = "defaultCell"
-    static let priorityCollectionViewCell = "priorityCell"
+    static let roomCollectionViewCell = "roomCell"
 }

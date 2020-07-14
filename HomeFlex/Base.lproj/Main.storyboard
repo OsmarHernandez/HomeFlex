@@ -31,81 +31,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="priorityCell" id="E3j-uZ-Icy" customClass="PriorityCollectionViewCell" customModule="HomeFlex" customModuleProvider="target">
-                                        <rect key="frame" x="67" y="0.0" width="280" height="340"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PPW-PP-N85">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="340"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fbn-b0-vwZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="340"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. Gomez Moring" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieD-ko-8sy">
-                                                    <rect key="frame" x="16" y="16" width="248" height="21"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogu-l8-Ffh">
-                                                    <rect key="frame" x="239.5" y="306" width="20.5" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="Y5o-sc-sg8"/>
-                                                        <constraint firstAttribute="width" constant="20.5" id="bnv-Sd-Bpm"/>
-                                                    </constraints>
-                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <state key="normal" image="heart" catalog="system"/>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wch-JI-7Kd">
-                                                    <rect key="frame" x="16" y="45" width="248" height="23.5"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="$7,500 ">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="20" name="ProximaNovaA-Regular"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="MXN ">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="16" name="ProximaNovaA-Regular"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="mensuales">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="20" name="ProximaNovaA-Regular"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="fbn-b0-vwZ" firstAttribute="leading" secondItem="PPW-PP-N85" secondAttribute="leading" id="4EA-GE-C4z"/>
-                                                <constraint firstItem="wch-JI-7Kd" firstAttribute="top" secondItem="ieD-ko-8sy" secondAttribute="bottom" constant="8" id="BqV-Tj-0v3"/>
-                                                <constraint firstAttribute="bottom" secondItem="fbn-b0-vwZ" secondAttribute="bottom" id="FkB-FT-aDs"/>
-                                                <constraint firstItem="ieD-ko-8sy" firstAttribute="top" secondItem="PPW-PP-N85" secondAttribute="top" constant="16" id="JKv-3Y-5zL"/>
-                                                <constraint firstAttribute="trailing" secondItem="ieD-ko-8sy" secondAttribute="trailing" constant="16" id="M9K-8U-erK"/>
-                                                <constraint firstItem="wch-JI-7Kd" firstAttribute="trailing" secondItem="ieD-ko-8sy" secondAttribute="trailing" id="aDO-qs-nQ3"/>
-                                                <constraint firstItem="ieD-ko-8sy" firstAttribute="leading" secondItem="PPW-PP-N85" secondAttribute="leading" constant="16" id="ci5-pG-vsC"/>
-                                                <constraint firstAttribute="trailing" secondItem="ogu-l8-Ffh" secondAttribute="trailing" constant="20" id="eOO-gT-C0x"/>
-                                                <constraint firstItem="fbn-b0-vwZ" firstAttribute="top" secondItem="PPW-PP-N85" secondAttribute="top" id="ffg-mr-V2G"/>
-                                                <constraint firstAttribute="trailing" secondItem="fbn-b0-vwZ" secondAttribute="trailing" id="iCN-if-fhl"/>
-                                                <constraint firstItem="wch-JI-7Kd" firstAttribute="leading" secondItem="ieD-ko-8sy" secondAttribute="leading" id="jj8-UZ-cLo"/>
-                                                <constraint firstAttribute="bottom" secondItem="ogu-l8-Ffh" secondAttribute="bottom" constant="12" id="ttD-Dv-Eac"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="280" height="340"/>
-                                        <connections>
-                                            <outlet property="addressLabel" destination="ieD-ko-8sy" id="qMg-5h-04O"/>
-                                            <outlet property="favoriteButton" destination="ogu-l8-Ffh" id="N3t-aW-NUr"/>
-                                            <outlet property="homeImageView" destination="fbn-b0-vwZ" id="TzL-Rx-dJg"/>
-                                            <outlet property="priceLabel" destination="wch-JI-7Kd" id="LpW-KY-whL"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="defaultCell" id="LcP-oP-g0P" customClass="DefaultCollectionViewCell" customModule="HomeFlex" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="350" width="340" height="340"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="roomCell" id="LcP-oP-g0P" userLabel="roomCell" customClass="RoomCollectionViewCell" customModule="HomeFlex" customModuleProvider="target">
+                                        <rect key="frame" x="37" y="0.0" width="340" height="340"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Efb-LQ-ddi">
                                             <rect key="frame" x="0.0" y="0.0" width="340" height="340"/>
@@ -193,27 +120,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-M5-IwW" userLabel="Location Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-M5-IwW" userLabel="Location Stack View">
                                 <rect key="frame" x="20" y="104" width="374" height="22"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-aC-6gc">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-aC-6gc">
                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="9RN-Iy-lIq"/>
                                             <constraint firstAttribute="width" constant="22" id="AOq-L2-0sM"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="chevron.down.circle.fill" catalog="system">
+                                        <state key="normal" image="mappin.and.ellipse" catalog="system">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="changeLocationButtonTapped:" destination="AsK-hM-9bg" eventType="touchUpInside" id="PrC-jh-OPo"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad Juárez, Chih. Mex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-As-sAx">
-                                        <rect key="frame" x="38" y="0.0" width="336" height="22"/>
+                                        <rect key="frame" x="30" y="0.0" width="344" height="22"/>
                                         <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="linkColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -239,10 +163,10 @@
                                     <action selector="favoriteButtonTapped:" destination="AsK-hM-9bg" id="hrK-e9-zyS"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="magnifyingglass" catalog="system" id="nPJ-zc-qwY">
+                            <barButtonItem image="arrow.up.arrow.down" catalog="system" id="nPJ-zc-qwY">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="searchButtonTapped:" destination="AsK-hM-9bg" id="9ge-z7-FrE"/>
+                                    <action selector="sortButtonTapped:" destination="AsK-hM-9bg" id="jeP-9K-wnd"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -353,13 +277,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="96"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="113"/>
         <image name="map.fill" catalog="system" width="128" height="113"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>

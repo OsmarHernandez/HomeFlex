@@ -14,6 +14,11 @@ class HomeViewController: UIViewController {
     
     let homeCollectionViewLayout = HomeCollectionViewLayout()
     
+    private lazy var searchBar: UISearchBar = {
+        let frame = CGRect(x: 0, y: 0, width: view.bounds.width - 40, height: 44)
+        return UISearchBar(frame: frame)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,12 +27,8 @@ class HomeViewController: UIViewController {
         homeCollectionView.dataSource = homeCollectionViewLayout
     }
     
-    @IBAction func changeLocationButtonTapped(_ sender: UIButton) {
-        print("Change Location")
-    }
-    
-    @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
-        print("Search")
+    @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {
+        print("Sort")
     }
     
     @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
