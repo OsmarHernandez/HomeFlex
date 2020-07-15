@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206933A924BE844400A5FB22 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206933A824BE844400A5FB22 /* NotificationView.swift */; };
 		207DF31F24BD0EEE007AD436 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DF31E24BD0EEE007AD436 /* HomeViewController.swift */; };
 		207DF32124BD1048007AD436 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DF32024BD1048007AD436 /* Constants.swift */; };
 		207DF32624BD1165007AD436 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DF32524BD1165007AD436 /* RoomCollectionViewCell.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206933A824BE844400A5FB22 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		207DF31E24BD0EEE007AD436 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		207DF32024BD1048007AD436 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		207DF32524BD1165007AD436 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				207DF32524BD1165007AD436 /* RoomCollectionViewCell.swift */,
+				206933A824BE844400A5FB22 /* NotificationView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				20EBE41D24BCDAA200E812AD /* AppDelegate.swift in Sources */,
 				207DF32A24BD306A007AD436 /* HomeCollectionViewLayout.swift in Sources */,
+				206933A924BE844400A5FB22 /* NotificationView.swift in Sources */,
 				207DF32624BD1165007AD436 /* RoomCollectionViewCell.swift in Sources */,
 				20EBE41F24BCDAA200E812AD /* SceneDelegate.swift in Sources */,
 				207DF31F24BD0EEE007AD436 /* HomeViewController.swift in Sources */,

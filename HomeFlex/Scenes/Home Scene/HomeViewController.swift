@@ -11,13 +11,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeCollectionView: UICollectionView!
+    @IBOutlet weak var favoriteNotificationView: UIView!
     
     let homeCollectionViewLayout = HomeCollectionViewLayout()
-    
-    private lazy var searchBar: UISearchBar = {
-        let frame = CGRect(x: 0, y: 0, width: view.bounds.width - 40, height: 44)
-        return UISearchBar(frame: frame)
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +29,19 @@ class HomeViewController: UIViewController {
     
     @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
         print("Navigate to Favorites")
+        
+        favoriteNotificationView.center.y -= 20
+        
+        UIView.animate(withDuration: 0.6, animations: {
+            self.favoriteNotificationView.center.y += 20
+            self.favoriteNotificationView.alpha = 1
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.6, delay: 3, options: [], animations: {
+                self.favoriteNotificationView.alpha = 0
+                self.favoriteNotificationView.center.y += 20
+            }, completion: { _ in
+                self.favoriteNotificationView.center.y -= 20
+            })
+        })
     }
 }
